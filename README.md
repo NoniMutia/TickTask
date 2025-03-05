@@ -17,7 +17,7 @@
 
 ### 1️⃣ Clone this repository  
 ```sh
-git clone 
+git clone https://github.com/NoniMutia/TickTask.git
 cd TickTask
 
 🌐 Live Demo
