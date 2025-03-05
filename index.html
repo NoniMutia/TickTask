@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TickTask - Stay on Track, Manage Your Tasks</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome for Icons -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="container">
+        <header class="app-title">
+          <h1><i class="fas fa-stopwatch"></i> TickTask</h1>
+          <p>
+            Kelola waktu dan tugas Anda dengan mudah.
+          </p>
+        </header>
+
+        <div class="main-content">
+          <!-- Timer Section -->
+          <div class="left-column">
+            <h2><i class="fas fa-clock"></i> Timer</h2>
+
+            <div id="display" class="timer-display">00:00:00</div>
+
+            <div class="input-container">
+              <input
+                type="text"
+                class="task-input"
+                placeholder="Masukkan nama tugas..."
+              />
+              <div class="button-container">
+                <button class="start-stop">
+                  <i class="fas fa-play"></i> Mulai
+                </button>
+                <button class="pause-resume" disabled>
+                  <i class="fas fa-pause"></i> Pause
+                </button>
+                <button class="reset">
+                  <i class="fas fa-stop"></i> Reset
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- History Section -->
+          <div class="right-column">
+            <h2><i class="fas fa-history"></i> Histori</h2>
+            <ul id="task-list"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
